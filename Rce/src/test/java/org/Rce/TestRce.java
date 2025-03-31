@@ -10,6 +10,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.charset.Charset;
 import java.util.Map;
+import java.util.Scanner;
 
 public class TestRce {
     @Test
@@ -116,4 +117,12 @@ public class TestRce {
         // 反射调用Runtime.getRuntime().exec(xxx)方法
         Object obj2 = m2.invoke(m1.invoke(null, new Object[]{}), new Object[]{str});
     }
+
+    //java代码审计exec命令执行的相关利用前面拼了一段然后调用 lang.runtime.exec("fuck" + a) 这里可以利用吗
+    @Test
+    public void Test8() throws IOException {
+        String a = " & calc"; // 攻击者控制a的值
+        Runtime.getRuntime().exec("fuck" + a);
+    }
+
 }

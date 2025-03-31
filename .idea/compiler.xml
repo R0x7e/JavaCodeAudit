@@ -6,6 +6,7 @@
       <directory url="file://$PROJECT_DIR$/DynamicProxy/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/Deserialize/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/CommonsCollections1/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/commons-collections/CommonsCollections2/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -13,8 +14,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Reflex" />
+        <module name="MemoryShell" />
         <module name="Rce" />
         <module name="Deserialize" />
+        <module name="CommonsCollections2" />
         <module name="CommonsCollections1" />
         <module name="FastjsonSerialize" />
         <module name="DynamicProxy" />

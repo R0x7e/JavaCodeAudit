@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/CommonsCollections1/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Deserialize/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MemoryShell/src" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -19,5 +20,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.71" level="project" />
   </component>
 </module>
