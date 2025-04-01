@@ -14,6 +14,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Reflex" />
+        <module name="LearnCloassLodaer" />
         <module name="MemoryShell" />
         <module name="Rce" />
         <module name="Deserialize" />
