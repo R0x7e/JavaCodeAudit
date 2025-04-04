@@ -14,15 +14,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Reflex" />
-        <module name="LearnCloassLodaer" />
         <module name="MemoryShell" />
-        <module name="Rce" />
-        <module name="Deserialize" />
+        <module name="CommonsCollections3" />
         <module name="CommonsCollections2" />
         <module name="CommonsCollections1" />
+        <module name="CommonsCollections7" />
+        <module name="CommonsCollections6" />
+        <module name="CommonsCollections5" />
         <module name="FastjsonSerialize" />
         <module name="DynamicProxy" />
         <module name="RMI" />
+        <module name="LearnCloassLodaer" />
+        <module name="Rce" />
+        <module name="Deserialize" />
+        <module name="Bcel" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Bcel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Bcel/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CommonsCollections1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CommonsCollections1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Deserialize/src/main/java" charset="UTF-8" />
@@ -21,5 +23,13 @@
     <file url="file://$PROJECT_DIR$/Reflex/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections5/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections5/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections6/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections6/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections7/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons-collections/CommonsCollections7/src/main/resources" charset="UTF-8" />
   </component>
 </project>

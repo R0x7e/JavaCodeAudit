@@ -1,15 +1,12 @@
 package org.example;
 
 public class Main {
-    public static void main(String[] args) {
-        ClassLoader classLoader = String.class.getClassLoader();
-        System.out.println(classLoader);
-        User user1 = new User();
-        System.out.println(user1.getClass().getClassLoader());
-        User user2 = new User();
-
-        System.out.println(user1.getClass().equals(user2.getClass()));
-
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+        TestClassLoader r0x7e = new TestClassLoader("R0x7e", "HelloWorld.enc");
+        Class<?> aClass = r0x7e.loadClass("org.example.HelloWorld");
+        HelloWorld helloWorld = (HelloWorld) aClass.newInstance();
+        helloWorld.sayHello();
+//        System.out.println(aClass.getClassLoader());
 
     }
 

