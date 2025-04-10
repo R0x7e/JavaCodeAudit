@@ -22,6 +22,17 @@
         <option value="$PROJECT_DIR$/LearnCloassLodaer/pom.xml" />
         <option value="$PROJECT_DIR$/Log4j/pom.xml" />
         <option value="$PROJECT_DIR$/MemoryShell/pom.xml" />
+        <option value="$PROJECT_DIR$/Rce/pom.xml" />
+        <option value="$PROJECT_DIR$/Reflex/pom.xml" />
+        <option value="$PROJECT_DIR$/RMI/pom.xml" />
+        <option value="$PROJECT_DIR$/commons-collections/CommonsCollections1/pom.xml" />
+        <option value="$PROJECT_DIR$/commons-collections/CommonsCollections2/pom.xml" />
+        <option value="$PROJECT_DIR$/commons-collections/CommonsCollections3/pom.xml" />
+        <option value="$PROJECT_DIR$/commons-collections/CommonsCollections5/pom.xml" />
+        <option value="$PROJECT_DIR$/commons-collections/CommonsCollections6/pom.xml" />
+        <option value="$PROJECT_DIR$/commons-collections/CommonsCollections7/pom.xml" />
+        <option value="$PROJECT_DIR$/Fastjson/Fastjson1.2.42/pom.xml" />
+        <option value="$PROJECT_DIR$/Fastjson/Fastjson1.2.44/pom.xml" />
       </list>
     </option>
   </component>

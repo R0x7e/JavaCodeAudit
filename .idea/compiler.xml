@@ -6,14 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LearnCloassLodaer" />
-        <module name="Fastjson1.2.24" />
+        <module name="Reflex" />
         <module name="MemoryShell" />
-        <module name="Deserialize" />
-        <module name="Bcel" />
-        <module name="Log4j" />
+        <module name="CommonsCollections3" />
+        <module name="CommonsCollections2" />
+        <module name="CommonsCollections1" />
+        <module name="CommonsCollections7" />
+        <module name="CommonsCollections6" />
+        <module name="CommonsCollections5" />
         <module name="Fastjson1.2.25" />
         <module name="DynamicProxy" />
+        <module name="RMI" />
+        <module name="LearnCloassLodaer" />
+        <module name="Fastjson1.2.44" />
+        <module name="Fastjson1.2.24" />
+        <module name="Deserialize" />
+        <module name="Rce" />
+        <module name="Bcel" />
+        <module name="Fastjson1.2.42" />
+        <module name="Log4j" />
       </profile>
     </annotationProcessing>
   </component>
