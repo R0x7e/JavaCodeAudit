@@ -2,33 +2,39 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/Reflex/DynamicProxy/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../Reflex/DynamicProxy/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/DynamicProxy/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/Deserialize/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/CommonsCollections1/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/commons-collections/CommonsCollections2/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../Deserialize/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../commons-collections/CommonsCollections1/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../commons-collections/CommonsCollections2/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Reflex" />
-        <module name="MemoryShell" />
-        <module name="CommonsCollections3" />
-        <module name="CommonsCollections2" />
-        <module name="CommonsCollections1" />
-        <module name="CommonsCollections7" />
-        <module name="CommonsCollections6" />
-        <module name="CommonsCollections5" />
-        <module name="FastjsonSerialize" />
-        <module name="DynamicProxy" />
-        <module name="RMI" />
         <module name="LearnCloassLodaer" />
-        <module name="Rce" />
-        <module name="Deserialize" />
-        <module name="Bcel" />
+        <module name="MemoryShell" />
+        <module name="Fastjson1.2.24" />
+        <module name="Fastjson1.2.25" />
+        <module name="DynamicProxy" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Bcel" target="1.8" />
+      <module name="CommonsCollections1" target="1.7" />
+      <module name="CommonsCollections2" target="1.7" />
+      <module name="CommonsCollections3" target="1.8" />
+      <module name="CommonsCollections5" target="1.8" />
+      <module name="CommonsCollections6" target="1.8" />
+      <module name="CommonsCollections7" target="1.8" />
+      <module name="Deserialize" target="1.8" />
+      <module name="FastjsonSerialize" target="1.7" />
+      <module name="Log4j" target="1.8" />
+      <module name="log4j" target="1.8" />
+      <module name="Rce" target="1.7" />
+      <module name="Reflex" target="1.7" />
+      <module name="RMI" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

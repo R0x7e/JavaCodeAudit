@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ASMSmaliIdeaPluginConfiguration">
     <asm skipDebug="true" skipFrames="true" skipCode="false" expandFrames="false" />
@@ -29,6 +30,11 @@
         <option value="$PROJECT_DIR$/commons-collections/CommonsCollections6/pom.xml" />
         <option value="$PROJECT_DIR$/commons-collections/CommonsCollections7/pom.xml" />
         <option value="$PROJECT_DIR$/Bcel/pom.xml" />
+        <option value="$PROJECT_DIR$/Log4j/pom.xml" />
+        <option value="$PROJECT_DIR$/../Fastjson/Fastjson1.2.24/pom.xml" />
+        <option value="$PROJECT_DIR$/../Fastjson/Fastjson1.2.25/pom.xml" />
+        <option value="$PROJECT_DIR$/../LearnCloassLodaer/pom.xml" />
+        <option value="$PROJECT_DIR$/../MemoryShell/pom.xml" />
       </list>
     </option>
   </component>
