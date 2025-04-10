@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.Rce.TestRce" time="0.528" tests="8" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce\target\test-classes;F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce\target\classes;E:\env\Maven-Repository\junit\junit\4.12\junit-4.12.jar;E:\env\Maven-Repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\env\Maven-Repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;E:\env\Maven-Repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;E:\env\Maven-Repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="F:\env\java\8u65\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\32561\AppData\Local\Temp\surefire6518116517973437400\surefirebooter-20250405193002783_3.jar C:\Users\32561\AppData\Local\Temp\surefire6518116517973437400 2025-04-05T19-29-44_570-jvmRun1 surefire-20250405193002783_1tmp surefire_0-20250405193002783_2tmp"/>
+    <property name="surefire.test.class.path" value="F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce\target\test-classes;F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce\target\classes;E:\env\Maven-Repository\junit\junit\4.12\junit-4.12.jar;E:\env\Maven-Repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\env\Maven-Repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;E:\env\Maven-Repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;E:\env\Maven-Repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\32561"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="F:\env\java\8u65\jre"/>
+    <property name="basedir" value="F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\32561\AppData\Local\Temp\surefire6518116517973437400\surefirebooter-20250405193002783_3.jar"/>
+    <property name="sun.boot.class.path" value="F:\env\java\8u65\jre\lib\resources.jar;F:\env\java\8u65\jre\lib\rt.jar;F:\env\java\8u65\jre\lib\sunrsasign.jar;F:\env\java\8u65\jre\lib\jsse.jar;F:\env\java\8u65\jre\lib\jce.jar;F:\env\java\8u65\jre\lib\charsets.jar;F:\env\java\8u65\jre\lib\jfr.jar;F:\env\java\8u65\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_65-b17"/>
+    <property name="user.name" value="32561"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="F:\env\java\8u65\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="E:\env\Maven-Repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\32561\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.2"/>
+    <property name="java.version" value="1.8.0_65"/>
+    <property name="user.dir" value="F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="F:\env\java\8u65\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;D:\Program Files\fortify\bin;D:\Program Files\vmware\bin\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\xshell\;D:\Program Files\xftp\;G:\Program Files\Git\cmd;D:\Program Files\Java\jdk1.8.0_351\bin;D:\Program Files\Java\jdk1.8.0_351\jre\bin;C:\Program Files\Microsoft Network Monitor 3\;F:\env\apache-maven-3.9.1-bin\apache-maven-3.9.1\bin;F:\desk;F:\env\Sdk\tools;F:\env\Sdk\platform-tools;D:\Program Files\nodejs\;F:\env\php-8.1.13-Win32-vs16-x64;D:\TMD-GCC\bin;D:\go\bin;D:\go\bin;E:\tools\computer_tools\cmder;F:\env\scala-2.13.14\bin;C:\Program Files\dotnet\;G:\Windows Kits\10\Windows Performance Toolkit\;F:\env\gradle-8.7-bin\gradle-8.7\bin;D:\Program Files\Graphviz\bin;g:\Program Files\Trae CN\bin;C:\Users\32561\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nmap;C:\Users\32561\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\32561\AppData\Roaming\npm;C:\Users\32561\go\bin;C:\Users\32561\AppData\Local\Programs\Fiddler;C:\Users\32561\.dotnet\tools;D:\Program Files\Windsurf\bin;C:\Users\32561\AppData\Local\Programs\cursor\resources\app\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.65-b01"/>
+    <property name="java.ext.dirs" value="F:\env\java\8u65\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="Test1" classname="org.Rce.TestRce" time="0.125">
+    <system-out><![CDATA[命令执行结果：
+
+活动连接
+
+  协议  本地地址          外部地址        状态           PID
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       1596
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:903            0.0.0.0:0              LISTENING       6700
+  TCP    0.0.0.0:913            0.0.0.0:0              LISTENING       6700
+  TCP    0.0.0.0:1099           0.0.0.0:0              LISTENING       30684
+  TCP    0.0.0.0:1389           0.0.0.0:0              LISTENING       30684
+  TCP    0.0.0.0:2179           0.0.0.0:0              LISTENING       3148
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       1904
+  TCP    0.0.0.0:5040           0.0.0.0:0              LISTENING       9956
+  TCP    0.0.0.0:5357           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8180           0.0.0.0:0              LISTENING       30684
+  TCP    0.0.0.0:8908           0.0.0.0:0              LISTENING       6788
+  TCP    0.0.0.0:9050           0.0.0.0:0              LISTENING       36920
+  TCP    0.0.0.0:23115          0.0.0.0:0              LISTENING       4952
+  TCP    0.0.0.0:23346          0.0.0.0:0              LISTENING       33800
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       1328
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       1216
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       3156
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       3908
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING       3984
+  TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING       5896
+  TCP    0.0.0.0:49680          0.0.0.0:0              LISTENING       1292
+  TCP    0.0.0.0:51938          0.0.0.0:0              LISTENING       6080
+  TCP    10.0.20.1:139          0.0.0.0:0              LISTENING       4
+  TCP    10.10.10.1:139         0.0.0.0:0              LISTENING       4
+  TCP    10.30.2.1:139          0.0.0.0:0              LISTENING       4
+  TCP    127.0.0.1:3305         0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:3306         0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:3307         0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:4301         0.0.0.0:0              LISTENING       3572
+  TCP    127.0.0.1:4709         0.0.0.0:0              LISTENING       4952
+  TCP    127.0.0.1:4985         127.0.0.1:23471        TIME_WAIT       0
+  TCP    127.0.0.1:5011         127.0.0.1:9050         ESTABLISHED     16256
+  TCP    127.0.0.1:5013         127.0.0.1:9050         ESTABLISHED     24592
+  TCP    127.0.0.1:5024         127.0.0.1:23471        ESTABLISHED     33800
+  TCP    127.0.0.1:5046         127.0.0.1:23471        ESTABLISHED     33800
+  TCP    127.0.0.1:5050         0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:7020         0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:7663         0.0.0.0:0              LISTENING       31772
+  TCP    127.0.0.1:7664         0.0.0.0:0              LISTENING       36920
+  TCP    127.0.0.1:7664         127.0.0.1:7682         ESTABLISHED     36920
+  TCP    127.0.0.1:7664         127.0.0.1:7684         ESTABLISHED     36920
+  TCP    127.0.0.1:7664         127.0.0.1:7685         ESTABLISHED     36920
+  TCP    127.0.0.1:7664         127.0.0.1:7686         ESTABLISHED     36920
+  TCP    127.0.0.1:7682         127.0.0.1:7664         ESTABLISHED     31772
+  TCP    127.0.0.1:7684         127.0.0.1:7664         ESTABLISHED     29864
+  TCP    127.0.0.1:7685         127.0.0.1:7664         ESTABLISHED     29864
+  TCP    127.0.0.1:7686         127.0.0.1:7664         ESTABLISHED     29864
+  TCP    127.0.0.1:7689         127.0.0.1:9050         ESTABLISHED     17580
+  TCP    127.0.0.1:8080         0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:8090         0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:8440         0.0.0.0:0              LISTENING       17580
+  TCP    127.0.0.1:8680         0.0.0.0:0              LISTENING       13988
+  TCP    127.0.0.1:8908         127.0.0.1:35486        ESTABLISHED     6788
+  TCP    127.0.0.1:8908         127.0.0.1:35493        ESTABLISHED     6788
+  TCP    127.0.0.1:9050         127.0.0.1:5011         ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:5013         ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:5049         TIME_WAIT       0
+  TCP    127.0.0.1:9050         127.0.0.1:5069         TIME_WAIT       0
+  TCP    127.0.0.1:9050         127.0.0.1:7689         ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:23364        ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:23382        ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:32785        ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:35269        ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:35394        ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:35401        ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:54754        ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:59450        ESTABLISHED     36920
+  TCP    127.0.0.1:9050         127.0.0.1:59451        ESTABLISHED     36920
+  TCP    127.0.0.1:9443         0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:10000        0.0.0.0:0              LISTENING       8720
+  TCP    127.0.0.1:13013        0.0.0.0:0              LISTENING       13988
+  TCP    127.0.0.1:13016        0.0.0.0:0              LISTENING       13988
+  TCP    127.0.0.1:13080        127.0.0.1:13081        ESTABLISHED     19440
+  TCP    127.0.0.1:13081        127.0.0.1:13080        ESTABLISHED     19440
+  TCP    127.0.0.1:13082        127.0.0.1:13083        ESTABLISHED     19440
+  TCP    127.0.0.1:13083        127.0.0.1:13082        ESTABLISHED     19440
+  TCP    127.0.0.1:20017        0.0.0.0:0              LISTENING       19440
+  TCP    127.0.0.1:23356        127.0.0.1:36510        ESTABLISHED     33800
+  TCP    127.0.0.1:23358        0.0.0.0:0              LISTENING       35924
+  TCP    127.0.0.1:23358        127.0.0.1:23378        ESTABLISHED     35924
+  TCP    127.0.0.1:23358        127.0.0.1:23440        ESTABLISHED     35924
+  TCP    127.0.0.1:23364        127.0.0.1:9050         ESTABLISHED     35924
+  TCP    127.0.0.1:23370        0.0.0.0:0              LISTENING       35924
+  TCP    127.0.0.1:23370        127.0.0.1:23443        ESTABLISHED     35924
+  TCP    127.0.0.1:23378        127.0.0.1:23358        ESTABLISHED     35924
+  TCP    127.0.0.1:23382        127.0.0.1:9050         ESTABLISHED     35924
+  TCP    127.0.0.1:23391        0.0.0.0:0              LISTENING       35924
+  TCP    127.0.0.1:23440        127.0.0.1:23358        ESTABLISHED     33800
+  TCP    127.0.0.1:23443        127.0.0.1:23370        ESTABLISHED     33800
+  TCP    127.0.0.1:23471        0.0.0.0:0              LISTENING       20284
+  TCP    127.0.0.1:23471        127.0.0.1:5024         ESTABLISHED     20284
+  TCP    127.0.0.1:23471        127.0.0.1:5046         ESTABLISHED     20284
+  TCP    127.0.0.1:23473        127.0.0.1:58028        ESTABLISHED     33800
+  TCP    127.0.0.1:28317        0.0.0.0:0              LISTENING       6940
+  TCP    127.0.0.1:32785        127.0.0.1:9050         ESTABLISHED     16256
+  TCP    127.0.0.1:33060        0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:35269        127.0.0.1:9050         ESTABLISHED     27252
+  TCP    127.0.0.1:35394        127.0.0.1:9050         ESTABLISHED     16256
+  TCP    127.0.0.1:35401        127.0.0.1:9050         ESTABLISHED     16256
+  TCP    127.0.0.1:35486        127.0.0.1:8908         ESTABLISHED     16256
+  TCP    127.0.0.1:35493        127.0.0.1:8908         ESTABLISHED     16256
+  TCP    127.0.0.1:36510        0.0.0.0:0              LISTENING       3784
+  TCP    127.0.0.1:36510        127.0.0.1:23356        ESTABLISHED     3784
+  TCP    127.0.0.1:37510        0.0.0.0:0              LISTENING       3784
+  TCP    127.0.0.1:41253        0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:42175        127.0.0.1:54541        ESTABLISHED     8720
+  TCP    127.0.0.1:42176        127.0.0.1:42177        ESTABLISHED     9544
+  TCP    127.0.0.1:42177        127.0.0.1:42176        ESTABLISHED     9544
+  TCP    127.0.0.1:48968        127.0.0.1:48969        ESTABLISHED     30684
+  TCP    127.0.0.1:48969        127.0.0.1:48968        ESTABLISHED     30684
+  TCP    127.0.0.1:48971        127.0.0.1:48972        ESTABLISHED     30684
+  TCP    127.0.0.1:48972        127.0.0.1:48971        ESTABLISHED     30684
+  TCP    127.0.0.1:50050        0.0.0.0:0              LISTENING       20524
+  TCP    127.0.0.1:50632        0.0.0.0:0              LISTENING       2764
+  TCP    127.0.0.1:51897        0.0.0.0:0              LISTENING       6080
+  TCP    127.0.0.1:51920        127.0.0.1:51921        ESTABLISHED     6080
+  TCP    127.0.0.1:51921        127.0.0.1:51920        ESTABLISHED     6080
+  TCP    127.0.0.1:51922        127.0.0.1:51923        ESTABLISHED     6080
+  TCP    127.0.0.1:51923        127.0.0.1:51922        ESTABLISHED     6080
+  TCP    127.0.0.1:51924        127.0.0.1:51925        ESTABLISHED     6080
+  TCP    127.0.0.1:51925        127.0.0.1:51924        ESTABLISHED     6080
+  TCP    127.0.0.1:51926        127.0.0.1:51927        ESTABLISHED     6080
+  TCP    127.0.0.1:51927        127.0.0.1:51926        ESTABLISHED     6080
+  TCP    127.0.0.1:51928        127.0.0.1:51929        ESTABLISHED     6080
+  TCP    127.0.0.1:51929        127.0.0.1:51928        ESTABLISHED     6080
+  TCP    127.0.0.1:51930        127.0.0.1:51931        ESTABLISHED     6080
+  TCP    127.0.0.1:51931        127.0.0.1:51930        ESTABLISHED     6080
+  TCP    127.0.0.1:51932        127.0.0.1:51933        ESTABLISHED     6080
+  TCP    127.0.0.1:51933        127.0.0.1:51932        ESTABLISHED     6080
+  TCP    127.0.0.1:51934        127.0.0.1:51935        ESTABLISHED     6080
+  TCP    127.0.0.1:51935        127.0.0.1:51934        ESTABLISHED     6080
+  TCP    127.0.0.1:51937        0.0.0.0:0              LISTENING       6080
+  TCP    127.0.0.1:52095        127.0.0.1:52096        ESTABLISHED     17580
+  TCP    127.0.0.1:52096        127.0.0.1:52095        ESTABLISHED     17580
+  TCP    127.0.0.1:54530        0.0.0.0:0              LISTENING       8644
+  TCP    127.0.0.1:54541        0.0.0.0:0              LISTENING       9544
+  TCP    127.0.0.1:54541        127.0.0.1:42175        ESTABLISHED     9544
+  TCP    127.0.0.1:54754        127.0.0.1:9050         ESTABLISHED     16256
+  TCP    127.0.0.1:58028        0.0.0.0:0              LISTENING       20284
+  TCP    127.0.0.1:58028        127.0.0.1:23473        ESTABLISHED     20284
+  TCP    127.0.0.1:59450        127.0.0.1:9050         ESTABLISHED     16044
+  TCP    127.0.0.1:59451        127.0.0.1:9050         ESTABLISHED     16044
+  TCP    127.0.0.1:60086        127.0.0.1:60087        ESTABLISHED     27252
+  TCP    127.0.0.1:60087        127.0.0.1:60086        ESTABLISHED     27252
+  TCP    127.0.0.1:60088        127.0.0.1:60089        ESTABLISHED     26564
+  TCP    127.0.0.1:60089        127.0.0.1:60088        ESTABLISHED     26564
+  TCP    127.0.0.1:61910        0.0.0.0:0              LISTENING       17580
+  TCP    127.0.0.1:63342        0.0.0.0:0              LISTENING       33800
+  TCP    169.254.188.139:139    0.0.0.0:0              LISTENING       4
+  TCP    172.17.32.1:139        0.0.0.0:0              LISTENING       4
+  TCP    172.20.48.1:139        0.0.0.0:0              LISTENING       4
+  TCP    172.30.137.176:139     0.0.0.0:0              LISTENING       4
+  TCP    172.30.137.176:4978    123.101.232.27:80      CLOSE_WAIT      19440
+  TCP    172.30.137.176:5012    111.29.57.105:18644    ESTABLISHED     36920
+  TCP    172.30.137.176:5014    111.29.57.106:18644    ESTABLISHED     36920
+  TCP    172.30.137.176:5041    35.223.238.178:443     TIME_WAIT       0
+  TCP    172.30.137.176:5053    35.223.238.178:443     TIME_WAIT       0
+  TCP    172.30.137.176:5054    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5055    18.155.68.24:443       TIME_WAIT       0
+  TCP    172.30.137.176:5056    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5057    18.155.68.24:443       TIME_WAIT       0
+  TCP    172.30.137.176:5058    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5059    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5061    18.155.68.24:443       TIME_WAIT       0
+  TCP    172.30.137.176:5062    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5063    18.155.68.24:443       TIME_WAIT       0
+  TCP    172.30.137.176:5064    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5065    118.193.97.194:443     TIME_WAIT       0
+  TCP    172.30.137.176:5066    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5067    18.155.68.24:443       TIME_WAIT       0
+  TCP    172.30.137.176:5068    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5070    18.155.68.24:443       TIME_WAIT       0
+  TCP    172.30.137.176:5072    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5073    35.223.238.178:443     TIME_WAIT       0
+  TCP    172.30.137.176:5074    18.155.68.24:443       TIME_WAIT       0
+  TCP    172.30.137.176:5075    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5076    18.155.68.24:443       ESTABLISHED     33800
+  TCP    172.30.137.176:5077    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5078    18.155.68.24:443       ESTABLISHED     33800
+  TCP    172.30.137.176:5079    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5080    18.155.68.24:443       ESTABLISHED     33800
+  TCP    172.30.137.176:5081    108.157.254.31:443     TIME_WAIT       0
+  TCP    172.30.137.176:5082    18.155.68.24:443       SYN_SENT        33800
+  TCP    172.30.137.176:7690    120.241.29.80:18644    ESTABLISHED     36920
+  TCP    172.30.137.176:15885   124.223.125.213:443    CLOSE_WAIT      6840
+  TCP    172.30.137.176:16191   35.174.127.31:443      ESTABLISHED     16256
+  TCP    172.30.137.176:19650   183.47.122.25:443      ESTABLISHED     13988
+  TCP    172.30.137.176:19658   74.125.20.188:5228     ESTABLISHED     16256
+  TCP    172.30.137.176:20191   123.101.232.27:80      CLOSE_WAIT      19440
+  TCP    172.30.137.176:22768   121.36.25.6:443        CLOSE_WAIT      4952
+  TCP    172.30.137.176:23367   120.233.176.218:18644  ESTABLISHED     36920
+  TCP    172.30.137.176:23387   120.233.176.218:18644  ESTABLISHED     36920
+  TCP    172.30.137.176:25369   52.187.79.109:443      ESTABLISHED     24592
+  TCP    172.30.137.176:25591   39.106.155.178:443     ESTABLISHED     16256
+  TCP    172.30.137.176:32744   111.124.200.67:443     ESTABLISHED     19440
+  TCP    172.30.137.176:32747   222.79.113.32:80       CLOSE_WAIT      3572
+  TCP    172.30.137.176:32748   222.79.113.118:443     CLOSE_WAIT      3572
+  TCP    172.30.137.176:32753   1.193.210.98:443       CLOSE_WAIT      4952
+  TCP    172.30.137.176:32786   111.29.57.105:18644    ESTABLISHED     36920
+  TCP    172.30.137.176:35242   42.81.193.250:8080     ESTABLISHED     3572
+  TCP    172.30.137.176:35270   120.241.29.80:18644    ESTABLISHED     36920
+  TCP    172.30.137.176:35372   117.89.177.207:443     ESTABLISHED     3572
+  TCP    172.30.137.176:35396   120.233.176.218:18644  ESTABLISHED     36920
+  TCP    172.30.137.176:35402   120.233.176.218:18644  ESTABLISHED     36920
+  TCP    172.30.137.176:35441   34.49.50.137:443       ESTABLISHED     33800
+  TCP    172.30.137.176:35442   34.49.50.137:443       ESTABLISHED     33800
+  TCP    172.30.137.176:35445   221.238.41.58:443      CLOSE_WAIT      3572
+  TCP    172.30.137.176:35448   221.238.41.58:443      CLOSE_WAIT      3572
+  TCP    172.30.137.176:35562   123.150.76.190:443     CLOSE_WAIT      32600
+  TCP    172.30.137.176:35579   221.238.80.103:443     CLOSE_WAIT      3572
+  TCP    172.30.137.176:35783   58.42.63.83:443        CLOSE_WAIT      3572
+  TCP    172.30.137.176:36234   203.107.1.1:80         CLOSE_WAIT      17580
+  TCP    172.30.137.176:49686   20.198.162.76:443      ESTABLISHED     6912
+  TCP    172.30.137.176:51852   180.102.58.235:80      ESTABLISHED     32600
+  TCP    172.30.137.176:51870   20.198.162.76:443      ESTABLISHED     1844
+  TCP    172.30.137.176:51893   171.43.167.234:80      CLOSE_WAIT      6940
+  TCP    172.30.137.176:51900   171.43.167.232:80      CLOSE_WAIT      6940
+  TCP    172.30.137.176:52098   182.140.148.108:443    CLOSE_WAIT      17580
+  TCP    172.30.137.176:52099   182.140.148.108:443    CLOSE_WAIT      17580
+  TCP    172.30.137.176:52100   182.140.148.108:443    CLOSE_WAIT      17580
+  TCP    172.30.137.176:52101   182.140.148.108:443    CLOSE_WAIT      17580
+  TCP    172.30.137.176:52102   182.140.148.108:443    CLOSE_WAIT      17580
+  TCP    172.30.137.176:52103   182.140.148.108:443    CLOSE_WAIT      17580
+  TCP    172.30.137.176:52105   182.140.148.108:443    CLOSE_WAIT      17580
+  TCP    172.30.137.176:52106   182.140.148.108:443    CLOSE_WAIT      17580
+  TCP    172.30.137.176:52107   182.140.148.108:443    CLOSE_WAIT      17580
+  TCP    172.30.137.176:52157   42.81.193.250:8080     ESTABLISHED     32600
+  TCP    172.30.137.176:52197   114.221.151.228:8104   ESTABLISHED     32600
+  TCP    172.30.137.176:52351   61.151.231.227:80      CLOSE_WAIT      2932
+  TCP    172.30.137.176:54757   120.241.29.80:18644    ESTABLISHED     36920
+  TCP    172.30.137.176:56885   121.36.73.60:443       CLOSE_WAIT      4952
+  TCP    172.30.137.176:56895   111.124.200.72:443     ESTABLISHED     19440
+  TCP    172.30.137.176:59452   111.29.57.106:18644    ESTABLISHED     36920
+  TCP    172.30.137.176:59453   111.29.57.106:18644    ESTABLISHED     36920
+  TCP    172.30.137.176:60445   116.205.106.69:11113   ESTABLISHED     4952
+  TCP    172.30.137.176:63139   123.101.232.27:80      CLOSE_WAIT      19440
+  TCP    192.168.93.1:139       0.0.0.0:0              LISTENING       4
+  TCP    192.168.100.155:139    0.0.0.0:0              LISTENING       4
+  TCP    192.168.150.1:139      0.0.0.0:0              LISTENING       4
+  TCP    192.168.229.1:139      0.0.0.0:0              LISTENING       4
+  TCP    [::]:135               [::]:0                 LISTENING       1596
+  TCP    [::]:445               [::]:0                 LISTENING       4
+  TCP    [::]:1099              [::]:0                 LISTENING       30684
+  TCP    [::]:1389              [::]:0                 LISTENING       30684
+  TCP    [::]:2179              [::]:0                 LISTENING       3148
+  TCP    [::]:3389              [::]:0                 LISTENING       1904
+  TCP    [::]:5357              [::]:0                 LISTENING       4
+  TCP    [::]:8180              [::]:0                 LISTENING       30684
+  TCP    [::]:9050              [::]:0                 LISTENING       36920
+  TCP    [::]:23115             [::]:0                 LISTENING       4952
+  TCP    [::]:23346             [::]:0                 LISTENING       33800
+  TCP    [::]:49664             [::]:0                 LISTENING       1328
+  TCP    [::]:49665             [::]:0                 LISTENING       1216
+  TCP    [::]:49666             [::]:0                 LISTENING       3156
+  TCP    [::]:49667             [::]:0                 LISTENING       3908
+  TCP    [::]:49668             [::]:0                 LISTENING       3984
+  TCP    [::]:49669             [::]:0                 LISTENING       5896
+  TCP    [::]:49680             [::]:0                 LISTENING       1292
+  TCP    [::]:51938             [::]:0                 LISTENING       6080
+  TCP    [::1]:21               [::]:0                 LISTENING       20524
+  TCP    [::1]:2375             [::]:0                 LISTENING       20524
+  TCP    [::1]:3305             [::]:0                 LISTENING       20524
+  TCP    [::1]:3307             [::]:0                 LISTENING       20524
+  TCP    [::1]:5050             [::]:0                 LISTENING       20524
+  TCP    [::1]:7020             [::]:0                 LISTENING       20524
+  TCP    [::1]:8080             [::]:0                 LISTENING       20524
+  TCP    [::1]:8090             [::]:0                 LISTENING       20524
+  TCP    [::1]:9443             [::]:0                 LISTENING       20524
+  TCP    [::1]:49670            [::]:0                 LISTENING       6340
+  TCP    [::1]:50050            [::]:0                 LISTENING       20524
+  TCP    [::1]:51898            [::]:0                 LISTENING       6080
+  UDP    0.0.0.0:53             *:*                                    4740
+  UDP    0.0.0.0:53             *:*                                    4740
+  UDP    0.0.0.0:123            *:*                                    32412
+  UDP    0.0.0.0:500            *:*                                    6168
+  UDP    0.0.0.0:3389           *:*                                    1904
+  UDP    0.0.0.0:3702           *:*                                    9508
+  UDP    0.0.0.0:3702           *:*                                    9508
+  UDP    0.0.0.0:4500           *:*                                    6168
+  UDP    0.0.0.0:5050           *:*                                    9956
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    3172
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    15592
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5353           *:*                                    16256
+  UDP    0.0.0.0:5353           *:*                                    15740
+  UDP    0.0.0.0:5355           *:*                                    3172
+  UDP    0.0.0.0:9050           *:*                                    36920
+  UDP    0.0.0.0:49752          103.7.30.83:8000                       2932
+  UDP    0.0.0.0:51215          101.226.144.94:8000                    32600
+  UDP    0.0.0.0:51515          101.226.144.94:8000                    32600
+  UDP    0.0.0.0:54238          *:*                                    9508
+  UDP    0.0.0.0:54353          *:*                                    16256
+  UDP    0.0.0.0:54354          *:*                                    16256
+  UDP    0.0.0.0:54783          *:*                                    2932
+  UDP    0.0.0.0:55286          101.226.144.94:8000                    2932
+  UDP    0.0.0.0:57527          101.226.144.94:8000                    32600
+  UDP    0.0.0.0:57528          101.226.144.44:8000                    32600
+  UDP    0.0.0.0:57529          101.226.144.94:8000                    32600
+  UDP    0.0.0.0:57530          *:*                                    19440
+  UDP    0.0.0.0:57531          *:*                                    19440
+  UDP    0.0.0.0:60389          *:*                                    32600
+  UDP    0.0.0.0:60766          *:*                                    4740
+  UDP    0.0.0.0:60767          *:*                                    4740
+  UDP    0.0.0.0:60772          *:*                                    16256
+  UDP    0.0.0.0:60773          *:*                                    16256
+  UDP    0.0.0.0:62711          101.226.144.44:8000                    32600
+  UDP    0.0.0.0:62806          101.226.144.94:8000                    2932
+  UDP    0.0.0.0:63120          103.7.30.61:8000                       2932
+  UDP    0.0.0.0:64937          *:*                                    2932
+  UDP    0.0.0.0:64938          *:*                                    2932
+  UDP    0.0.0.0:65353          *:*                                    4740
+  UDP    10.0.20.1:137          *:*                                    4
+  UDP    10.0.20.1:138          *:*                                    4
+  UDP    10.0.20.1:1900         *:*                                    5608
+  UDP    10.0.20.1:65346        *:*                                    5608
+  UDP    10.10.10.1:137         *:*                                    4
+  UDP    10.10.10.1:138         *:*                                    4
+  UDP    10.10.10.1:1900        *:*                                    5608
+  UDP    10.10.10.1:65345       *:*                                    5608
+  UDP    10.30.2.1:137          *:*                                    4
+  UDP    10.30.2.1:138          *:*                                    4
+  UDP    10.30.2.1:1900         *:*                                    5608
+  UDP    10.30.2.1:65344        *:*                                    5608
+  UDP    127.0.0.1:1900         *:*                                    5608
+  UDP    127.0.0.1:40000        *:*                                    8720
+  UDP    127.0.0.1:57565        *:*                                    3572
+  UDP    127.0.0.1:57566        *:*                                    3572
+  UDP    127.0.0.1:57567        *:*                                    3572
+  UDP    127.0.0.1:57568        *:*                                    3572
+  UDP    127.0.0.1:57569        *:*                                    3572
+  UDP    127.0.0.1:57570        *:*                                    3572
+  UDP    127.0.0.1:59601        127.0.0.1:59601                        5268
+  UDP    127.0.0.1:61726        *:*                                    6080
+  UDP    127.0.0.1:65350        *:*                                    5608
+  UDP    169.254.188.139:137    *:*                                    4
+  UDP    169.254.188.139:138    *:*                                    4
+  UDP    169.254.188.139:1900   *:*                                    5608
+  UDP    169.254.188.139:65341  *:*                                    5608
+  UDP    172.17.32.1:67         *:*                                    4740
+  UDP    172.17.32.1:68         *:*                                    4740
+  UDP    172.17.32.1:137        *:*                                    4
+  UDP    172.17.32.1:138        *:*                                    4
+  UDP    172.17.32.1:1900       *:*                                    5608
+  UDP    172.17.32.1:65351      *:*                                    5608
+  UDP    172.20.48.1:137        *:*                                    4
+  UDP    172.20.48.1:138        *:*                                    4
+  UDP    172.20.48.1:1900       *:*                                    5608
+  UDP    172.20.48.1:65352      *:*                                    5608
+  UDP    172.30.137.176:137     *:*                                    4
+  UDP    172.30.137.176:138     *:*                                    4
+  UDP    172.30.137.176:1900    *:*                                    5608
+  UDP    172.30.137.176:65349   *:*                                    5608
+  UDP    192.168.93.1:137       *:*                                    4
+  UDP    192.168.93.1:138       *:*                                    4
+  UDP    192.168.93.1:1900      *:*                                    5608
+  UDP    192.168.93.1:65348     *:*                                    5608
+  UDP    192.168.100.155:137    *:*                                    4
+  UDP    192.168.100.155:138    *:*                                    4
+  UDP    192.168.100.155:1900   *:*                                    5608
+  UDP    192.168.100.155:65343  *:*                                    5608
+  UDP    192.168.150.1:137      *:*                                    4
+  UDP    192.168.150.1:138      *:*                                    4
+  UDP    192.168.150.1:1900     *:*                                    5608
+  UDP    192.168.150.1:65347    *:*                                    5608
+  UDP    192.168.229.1:137      *:*                                    4
+  UDP    192.168.229.1:138      *:*                                    4
+  UDP    192.168.229.1:1900     *:*                                    5608
+  UDP    192.168.229.1:65342    *:*                                    5608
+  UDP    [::]:123               *:*                                    32412
+  UDP    [::]:500               *:*                                    6168
+  UDP    [::]:3389              *:*                                    1904
+  UDP    [::]:3702              *:*                                    9508
+  UDP    [::]:3702              *:*                                    9508
+  UDP    [::]:4500              *:*                                    6168
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5353              *:*                                    3172
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    15740
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    16256
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5353              *:*                                    15592
+  UDP    [::]:5355              *:*                                    3172
+  UDP    [::]:9050              *:*                                    36920
+  UDP    [::]:54239             *:*                                    9508
+  UDP    [::]:54354             *:*                                    16256
+  UDP    [::]:57531             *:*                                    19440
+  UDP    [::]:60768             *:*                                    4740
+  UDP    [::]:60773             *:*                                    16256
+  UDP    [::]:65354             *:*                                    4740
+  UDP    [::1]:1900             *:*                                    5608
+  UDP    [::1]:65338            *:*                                    5608
+  UDP    [fe80::f6c:d72d:dc17:8fe7%4]:1900  *:*                                    5608
+  UDP    [fe80::f6c:d72d:dc17:8fe7%4]:65334  *:*                                    5608
+  UDP    [fe80::39aa:b62e:99b8:35ed%6]:1900  *:*                                    5608
+  UDP    [fe80::39aa:b62e:99b8:35ed%6]:65330  *:*                                    5608
+  UDP    [fe80::4bed:6d4e:a3b2:9b61%12]:1900  *:*                                    5608
+  UDP    [fe80::4bed:6d4e:a3b2:9b61%12]:65335  *:*                                    5608
+  UDP    [fe80::522a:bba5:27d1:5dea%147]:1900  *:*                                    5608
+  UDP    [fe80::522a:bba5:27d1:5dea%147]:65340  *:*                                    5608
+  UDP    [fe80::6631:3dd3:99d5:4a64%20]:1900  *:*                                    5608
+  UDP    [fe80::6631:3dd3:99d5:4a64%20]:65337  *:*                                    5608
+  UDP    [fe80::91f1:dafd:579:7ba2%31]:1900  *:*                                    5608
+  UDP    [fe80::91f1:dafd:579:7ba2%31]:65332  *:*                                    5608
+  UDP    [fe80::b6a4:d64f:c562:88d6%21]:1900  *:*                                    5608
+  UDP    [fe80::b6a4:d64f:c562:88d6%21]:65333  *:*                                    5608
+  UDP    [fe80::cdc2:8a26:458b:e599%36]:1900  *:*                                    5608
+  UDP    [fe80::cdc2:8a26:458b:e599%36]:65336  *:*                                    5608
+  UDP    [fe80::f39c:8b5c:5508:afdc%30]:1900  *:*                                    5608
+  UDP    [fe80::f39c:8b5c:5508:afdc%30]:65339  *:*                                    5608
+  UDP    [fe80::fa13:c790:5c24:21a7%34]:1900  *:*                                    5608
+  UDP    [fe80::fa13:c790:5c24:21a7%34]:65331  *:*                                    5608
+]]></system-out>
+  </testcase>
+  <testcase name="Test2" classname="org.Rce.TestRce" time="0.117">
+    <system-out><![CDATA[命令执行结果：
+
+Windows IP 配置
+
+   主机名  . . . . . . . . . . . . . : pwjcw
+   主 DNS 后缀 . . . . . . . . . . . : 
+   节点类型  . . . . . . . . . . . . : 混合
+   IP 路由已启用 . . . . . . . . . . : 否
+   WINS 代理已启用 . . . . . . . . . : 否
+
+以太网适配器 cfw-tap:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : TAP-Windows Adapter V9
+   物理地址. . . . . . . . . . . . . : 00-FF-B2-4D-4F-1C
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 以太网:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   物理地址. . . . . . . . . . . . . : 00-2B-67-54-08-CA
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+未知适配器 OpenVPN Wintun:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Wintun Userspace Tunnel
+   物理地址. . . . . . . . . . . . . : 
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 以太网 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Sangfor SSL VPN CS Support System VNIC
+   物理地址. . . . . . . . . . . . . : 00-FF-64-35-22-79
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 VirtualBox Host-Only Network:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   物理地址. . . . . . . . . . . . . : 0A-00-27-00-00-06
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::39aa:b62e:99b8:35ed%6(首选) 
+   自动配置 IPv4 地址  . . . . . . . : 169.254.188.139(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.0.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1644822567
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 以太网 4:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : TAP-Windows Adapter V9 #2
+   物理地址. . . . . . . . . . . . . : 00-FF-07-8C-06-A3
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+未知适配器 OpenVPN Data Channel Offload:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : OpenVPN Data Channel Offload
+   物理地址. . . . . . . . . . . . . : 
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+无线局域网适配器 本地连接* 1:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   物理地址. . . . . . . . . . . . . : 3C-58-C2-68-2A-69
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+无线局域网适配器 本地连接* 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   物理地址. . . . . . . . . . . . . : 3E-58-C2-68-2A-68
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 VMware Network Adapter VMnet1:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet1
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-01
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::fa13:c790:5c24:21a7%34(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.229.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 50352214
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet2:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet2
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-02
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::91f1:dafd:579:7ba2%31(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.100.155(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.100.124
+   DHCPv6 IAID . . . . . . . . . . . : -2063577002
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   DNS 服务器  . . . . . . . . . . . : 114.114.114.114
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet8:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet8
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-08
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::b6a4:d64f:c562:88d6%21(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.30.2.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 469782614
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet4:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet4
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-04
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::f6c:d72d:dc17:8fe7%4(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.10.10.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1828737110
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet5:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet5
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-05
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::4bed:6d4e:a3b2:9b61%12(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.0.20.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1879068758
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet6:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet6
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-06
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::cdc2:8a26:458b:e599%36(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.150.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1929400406
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet7:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet7
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-07
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::6631:3dd3:99d5:4a64%20(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.93.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 2130726998
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+无线局域网适配器 WLAN:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz
+   物理地址. . . . . . . . . . . . . : 3C-58-C2-68-2A-68
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   IPv4 地址 . . . . . . . . . . . . : 172.30.137.176(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.0.0
+   获得租约的时间  . . . . . . . . . : 2025年4月5日 13:17:48
+   租约过期的时间  . . . . . . . . . : 2025年4月6日 2:02:40
+   默认网关. . . . . . . . . . . . . : 172.30.255.254
+   DHCP 服务器 . . . . . . . . . . . : 172.30.255.254
+   DNS 服务器  . . . . . . . . . . . : 172.17.2.22
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 蓝牙网络连接:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   物理地址. . . . . . . . . . . . . : 3C-58-C2-68-2A-6C
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 vEthernet (Default Switch):
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter
+   物理地址. . . . . . . . . . . . . : 00-15-5D-83-1A-0A
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::f39c:8b5c:5508:afdc%30(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 172.17.32.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.240.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 503321949
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 vEthernet (WSL (Hyper-V firewall)):
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter #2
+   物理地址. . . . . . . . . . . . . : 00-15-5D-E6-23-91
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::522a:bba5:27d1:5dea%147(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 172.20.48.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.240.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : -1828711075
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+]]></system-out>
+  </testcase>
+  <testcase name="Test3" classname="org.Rce.TestRce" time="0.106">
+    <system-out><![CDATA[
+Windows IP 配置
+
+   主机名  . . . . . . . . . . . . . : pwjcw
+   主 DNS 后缀 . . . . . . . . . . . : 
+   节点类型  . . . . . . . . . . . . : 混合
+   IP 路由已启用 . . . . . . . . . . : 否
+   WINS 代理已启用 . . . . . . . . . : 否
+
+以太网适配器 cfw-tap:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : TAP-Windows Adapter V9
+   物理地址. . . . . . . . . . . . . : 00-FF-B2-4D-4F-1C
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 以太网:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   物理地址. . . . . . . . . . . . . : 00-2B-67-54-08-CA
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+未知适配器 OpenVPN Wintun:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Wintun Userspace Tunnel
+   物理地址. . . . . . . . . . . . . : 
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 以太网 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Sangfor SSL VPN CS Support System VNIC
+   物理地址. . . . . . . . . . . . . : 00-FF-64-35-22-79
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 VirtualBox Host-Only Network:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   物理地址. . . . . . . . . . . . . : 0A-00-27-00-00-06
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::39aa:b62e:99b8:35ed%6(首选) 
+   自动配置 IPv4 地址  . . . . . . . : 169.254.188.139(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.0.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1644822567
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 以太网 4:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : TAP-Windows Adapter V9 #2
+   物理地址. . . . . . . . . . . . . : 00-FF-07-8C-06-A3
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+未知适配器 OpenVPN Data Channel Offload:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : OpenVPN Data Channel Offload
+   物理地址. . . . . . . . . . . . . : 
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+无线局域网适配器 本地连接* 1:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   物理地址. . . . . . . . . . . . . : 3C-58-C2-68-2A-69
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+无线局域网适配器 本地连接* 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   物理地址. . . . . . . . . . . . . : 3E-58-C2-68-2A-68
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 VMware Network Adapter VMnet1:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet1
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-01
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::fa13:c790:5c24:21a7%34(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.229.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 50352214
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet2:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet2
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-02
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::91f1:dafd:579:7ba2%31(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.100.155(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.100.124
+   DHCPv6 IAID . . . . . . . . . . . : -2063577002
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   DNS 服务器  . . . . . . . . . . . : 114.114.114.114
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet8:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet8
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-08
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::b6a4:d64f:c562:88d6%21(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.30.2.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 469782614
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet4:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet4
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-04
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::f6c:d72d:dc17:8fe7%4(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.10.10.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1828737110
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet5:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet5
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-05
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::4bed:6d4e:a3b2:9b61%12(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.0.20.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1879068758
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet6:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet6
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-06
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::cdc2:8a26:458b:e599%36(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.150.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1929400406
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet7:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet7
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-07
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::6631:3dd3:99d5:4a64%20(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.93.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 2130726998
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+无线局域网适配器 WLAN:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz
+   物理地址. . . . . . . . . . . . . : 3C-58-C2-68-2A-68
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   IPv4 地址 . . . . . . . . . . . . : 172.30.137.176(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.0.0
+   获得租约的时间  . . . . . . . . . : 2025年4月5日 13:17:48
+   租约过期的时间  . . . . . . . . . : 2025年4月6日 2:02:40
+   默认网关. . . . . . . . . . . . . : 172.30.255.254
+   DHCP 服务器 . . . . . . . . . . . : 172.30.255.254
+   DNS 服务器  . . . . . . . . . . . : 172.17.2.22
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 蓝牙网络连接:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   物理地址. . . . . . . . . . . . . : 3C-58-C2-68-2A-6C
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 vEthernet (Default Switch):
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter
+   物理地址. . . . . . . . . . . . . : 00-15-5D-83-1A-0A
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::f39c:8b5c:5508:afdc%30(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 172.17.32.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.240.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 503321949
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 vEthernet (WSL (Hyper-V firewall)):
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter #2
+   物理地址. . . . . . . . . . . . . : 00-15-5D-E6-23-91
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::522a:bba5:27d1:5dea%147(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 172.20.48.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.240.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : -1828711075
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+]]></system-out>
+  </testcase>
+  <testcase name="Test4" classname="org.Rce.TestRce" time="0.004">
+    <error message="java.lang.ProcessImpl cannot be cast to java.io.InputStream" type="java.lang.ClassCastException"><![CDATA[java.lang.ClassCastException: java.lang.ProcessImpl cannot be cast to java.io.InputStream
+	at org.Rce.TestRce.Test4(TestRce.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+  </testcase>
+  <testcase name="Test5" classname="org.Rce.TestRce" time="0.131">
+    <system-out><![CDATA[
+Windows IP 配置
+
+   主机名  . . . . . . . . . . . . . : pwjcw
+   主 DNS 后缀 . . . . . . . . . . . : 
+   节点类型  . . . . . . . . . . . . : 混合
+   IP 路由已启用 . . . . . . . . . . : 否
+   WINS 代理已启用 . . . . . . . . . : 否
+
+以太网适配器 cfw-tap:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : TAP-Windows Adapter V9
+   物理地址. . . . . . . . . . . . . : 00-FF-B2-4D-4F-1C
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 以太网:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   物理地址. . . . . . . . . . . . . : 00-2B-67-54-08-CA
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+未知适配器 OpenVPN Wintun:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Wintun Userspace Tunnel
+   物理地址. . . . . . . . . . . . . : 
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 以太网 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Sangfor SSL VPN CS Support System VNIC
+   物理地址. . . . . . . . . . . . . : 00-FF-64-35-22-79
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 VirtualBox Host-Only Network:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   物理地址. . . . . . . . . . . . . : 0A-00-27-00-00-06
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::39aa:b62e:99b8:35ed%6(首选) 
+   自动配置 IPv4 地址  . . . . . . . : 169.254.188.139(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.0.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1644822567
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 以太网 4:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : TAP-Windows Adapter V9 #2
+   物理地址. . . . . . . . . . . . . : 00-FF-07-8C-06-A3
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+未知适配器 OpenVPN Data Channel Offload:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : OpenVPN Data Channel Offload
+   物理地址. . . . . . . . . . . . . : 
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+无线局域网适配器 本地连接* 1:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   物理地址. . . . . . . . . . . . . : 3C-58-C2-68-2A-69
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+无线局域网适配器 本地连接* 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   物理地址. . . . . . . . . . . . . : 3E-58-C2-68-2A-68
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 VMware Network Adapter VMnet1:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet1
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-01
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::fa13:c790:5c24:21a7%34(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.229.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 50352214
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet2:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet2
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-02
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::91f1:dafd:579:7ba2%31(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.100.155(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.100.124
+   DHCPv6 IAID . . . . . . . . . . . : -2063577002
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   DNS 服务器  . . . . . . . . . . . : 114.114.114.114
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet8:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet8
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-08
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::b6a4:d64f:c562:88d6%21(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.30.2.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 469782614
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet4:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet4
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-04
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::f6c:d72d:dc17:8fe7%4(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.10.10.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1828737110
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet5:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet5
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-05
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::4bed:6d4e:a3b2:9b61%12(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.0.20.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1879068758
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet6:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet6
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-06
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::cdc2:8a26:458b:e599%36(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.150.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 1929400406
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 VMware Network Adapter VMnet7:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : VMware Virtual Ethernet Adapter for VMnet7
+   物理地址. . . . . . . . . . . . . : 00-50-56-C0-00-07
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::6631:3dd3:99d5:4a64%20(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.93.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 2130726998
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+无线局域网适配器 WLAN:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz
+   物理地址. . . . . . . . . . . . . : 3C-58-C2-68-2A-68
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   IPv4 地址 . . . . . . . . . . . . : 172.30.137.176(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.0.0
+   获得租约的时间  . . . . . . . . . : 2025年4月5日 13:17:48
+   租约过期的时间  . . . . . . . . . : 2025年4月6日 2:02:39
+   默认网关. . . . . . . . . . . . . : 172.30.255.254
+   DHCP 服务器 . . . . . . . . . . . : 172.30.255.254
+   DNS 服务器  . . . . . . . . . . . : 172.17.2.22
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 蓝牙网络连接:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   物理地址. . . . . . . . . . . . . : 3C-58-C2-68-2A-6C
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+
+以太网适配器 vEthernet (Default Switch):
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter
+   物理地址. . . . . . . . . . . . . : 00-15-5D-83-1A-0A
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::f39c:8b5c:5508:afdc%30(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 172.17.32.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.240.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 503321949
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+以太网适配器 vEthernet (WSL (Hyper-V firewall)):
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter #2
+   物理地址. . . . . . . . . . . . . : 00-15-5D-E6-23-91
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::522a:bba5:27d1:5dea%147(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 172.20.48.1(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.240.0
+   默认网关. . . . . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : -1828711075
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-26-58-D2-E1-00-2B-67-54-08-CA
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+Command executed with exit code: 0
+]]></system-out>
+  </testcase>
+  <testcase name="Test6" classname="org.Rce.TestRce" time="0"/>
+  <testcase name="Test7" classname="org.Rce.TestRce" time="0"/>
+  <testcase name="Test8" classname="org.Rce.TestRce" time="0.004">
+    <error message="Cannot run program &quot;fuck&quot;: CreateProcess error=2, 系统找不到指定的文件。" type="java.io.IOException"><![CDATA[java.io.IOException: Cannot run program "fuck": CreateProcess error=2, 系统找不到指定的文件。
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at org.Rce.TestRce.Test8(TestRce.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 29 more
+]]></error>
+  </testcase>
+</testsuite>

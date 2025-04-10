@@ -1,0 +1,7 @@
+org\example\DynamicProxy\Test$1.class
+org\example\Hello.class
+org\example\StaticProxy\Test.class
+org\example\StaticProxy\Persion.class
+org\example\DynamicProxy\Test.class
+org\example\StaticProxy\XiaoMing.class
+org\example\DynamicProxy\HelloInvocationHandler.class

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.Rce.TestSpEL" time="0.275" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce\target\test-classes;F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce\target\classes;E:\env\Maven-Repository\junit\junit\4.12\junit-4.12.jar;E:\env\Maven-Repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\env\Maven-Repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;E:\env\Maven-Repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;E:\env\Maven-Repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="F:\env\java\8u65\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\32561\AppData\Local\Temp\surefire6518116517973437400\surefirebooter-20250405193002783_3.jar C:\Users\32561\AppData\Local\Temp\surefire6518116517973437400 2025-04-05T19-29-44_570-jvmRun1 surefire-20250405193002783_1tmp surefire_0-20250405193002783_2tmp"/>
+    <property name="surefire.test.class.path" value="F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce\target\test-classes;F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce\target\classes;E:\env\Maven-Repository\junit\junit\4.12\junit-4.12.jar;E:\env\Maven-Repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\env\Maven-Repository\org\springframework\spring-expression\5.3.1\spring-expression-5.3.1.jar;E:\env\Maven-Repository\org\springframework\spring-core\5.3.1\spring-core-5.3.1.jar;E:\env\Maven-Repository\org\springframework\spring-jcl\5.3.1\spring-jcl-5.3.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\32561"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="F:\env\java\8u65\jre"/>
+    <property name="basedir" value="F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\32561\AppData\Local\Temp\surefire6518116517973437400\surefirebooter-20250405193002783_3.jar"/>
+    <property name="sun.boot.class.path" value="F:\env\java\8u65\jre\lib\resources.jar;F:\env\java\8u65\jre\lib\rt.jar;F:\env\java\8u65\jre\lib\sunrsasign.jar;F:\env\java\8u65\jre\lib\jsse.jar;F:\env\java\8u65\jre\lib\jce.jar;F:\env\java\8u65\jre\lib\charsets.jar;F:\env\java\8u65\jre\lib\jfr.jar;F:\env\java\8u65\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_65-b17"/>
+    <property name="user.name" value="32561"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="F:\env\java\8u65\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="E:\env\Maven-Repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\32561\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.2"/>
+    <property name="java.version" value="1.8.0_65"/>
+    <property name="user.dir" value="F:\project\JavaCodeAudit\JavaSecurity\JavaSecurity\Rce"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="F:\env\java\8u65\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;D:\Program Files\fortify\bin;D:\Program Files\vmware\bin\;D:\Program Files\python\Scripts\;D:\Program Files\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\xshell\;D:\Program Files\xftp\;G:\Program Files\Git\cmd;D:\Program Files\Java\jdk1.8.0_351\bin;D:\Program Files\Java\jdk1.8.0_351\jre\bin;C:\Program Files\Microsoft Network Monitor 3\;F:\env\apache-maven-3.9.1-bin\apache-maven-3.9.1\bin;F:\desk;F:\env\Sdk\tools;F:\env\Sdk\platform-tools;D:\Program Files\nodejs\;F:\env\php-8.1.13-Win32-vs16-x64;D:\TMD-GCC\bin;D:\go\bin;D:\go\bin;E:\tools\computer_tools\cmder;F:\env\scala-2.13.14\bin;C:\Program Files\dotnet\;G:\Windows Kits\10\Windows Performance Toolkit\;F:\env\gradle-8.7-bin\gradle-8.7\bin;D:\Program Files\Graphviz\bin;g:\Program Files\Trae CN\bin;C:\Users\32561\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nmap;C:\Users\32561\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\32561\AppData\Roaming\npm;C:\Users\32561\go\bin;C:\Users\32561\AppData\Local\Programs\Fiddler;C:\Users\32561\.dotnet\tools;D:\Program Files\Windsurf\bin;C:\Users\32561\AppData\Local\Programs\cursor\resources\app\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.65-b01"/>
+    <property name="java.ext.dirs" value="F:\env\java\8u65\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="test1" classname="org.Rce.TestSpEL" time="0.274"/>
+</testsuite>
