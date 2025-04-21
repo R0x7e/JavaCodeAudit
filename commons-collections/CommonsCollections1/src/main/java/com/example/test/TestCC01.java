@@ -10,6 +10,7 @@ import org.apache.commons.collections.map.LinkedMap;
 import org.apache.commons.collections.map.TransformedMap;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,7 +35,7 @@ public class TestCC01 {
      * 测试transform方法是否能进行执行任意命令
      */
     @Test
-    public void testtransform(){
+    public void testtransform() throws IOException {
         //首先构造一个Runtime对象
         Runtime runtime = Runtime.getRuntime();
         //设置InvokerTransformer构造方法的参数
@@ -44,6 +45,7 @@ public class TestCC01 {
         InvokerTransformer invokerTransformer = new InvokerTransformer(MethodName, paramTypes, arg);
         //调用方法，传入Runtime对象
         invokerTransformer.transform(runtime);
+        Runtime.getRuntime().exec("calc");
     }
 
     /**

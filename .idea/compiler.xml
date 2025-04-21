@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Reflex" />
+        <module name="FastjsonNativeDeserialization" />
         <module name="MemoryShell" />
         <module name="CommonsCollections3" />
         <module name="CommonsCollections2" />
@@ -15,10 +16,13 @@
         <module name="CommonsCollections6" />
         <module name="CommonsCollections5" />
         <module name="Fastjson1.2.25" />
+        <module name="Fastjson1.2.47" />
+        <module name="BypassJNDI" />
         <module name="DynamicProxy" />
         <module name="RMI" />
+        <module name="Fastjson1.2.43" />
         <module name="LearnCloassLodaer" />
-        <module name="Fastjson1.2.44" />
+        <module name="Fastjson1.2.45" />
         <module name="Fastjson1.2.24" />
         <module name="Deserialize" />
         <module name="Rce" />
@@ -27,5 +31,9 @@
         <module name="Log4j" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fastjson" target="1.5" />
+      <module name="Fastjson1.2.44" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ASMSmaliIdeaPluginConfiguration">
     <asm skipDebug="true" skipFrames="true" skipCode="false" expandFrames="false" />
@@ -34,10 +33,23 @@
         <option value="$PROJECT_DIR$/Fastjson/Fastjson1.2.42/pom.xml" />
         <option value="$PROJECT_DIR$/Fastjson/Fastjson1.2.44/pom.xml" />
         <option value="$PROJECT_DIR$/Fastjson/Fastjson1.2.43/pom.xml" />
+        <option value="$PROJECT_DIR$/Fastjson/fastjson-1.2.44/pom.xml" />
+        <option value="$PROJECT_DIR$/Fastjson/Fastjson1.2.45/pom.xml" />
+        <option value="$PROJECT_DIR$/Fastjson/Fastjson1.2.47/pom.xml" />
+        <option value="$PROJECT_DIR$/../BypassJNDI/pom.xml" />
+        <option value="$PROJECT_DIR$/BypassJNDI/pom.xml" />
+        <option value="$PROJECT_DIR$/Fastjson/FastjsonNativeDeserialization/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../BypassJNDI/pom.xml" />
+        <option value="$PROJECT_DIR$/Fastjson/Fastjson1.2.44/pom.xml" />
+        <option value="$PROJECT_DIR$/Fastjson/fastjson-1.2.44/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (4)" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8_65" project-jdk-type="JavaSDK" />
   <component name="SuppressionsComponent">
     <option name="suppComments" value="[]" />
   </component>
